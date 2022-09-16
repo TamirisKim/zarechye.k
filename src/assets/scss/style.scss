@@ -1,0 +1,76 @@
+$accent-color: #c49d7f;
+
+$white: #fff;
+$black: #151515;
+
+$footer: #333333;
+$footer-white: #f2f5f7;
+
+$ff: "Circe", sans-serif;
+
+@import "src/fonts"; /* ! */
+@import "src/reset";
+@import "src/reused";
+
+
+
+/* HEADER */
+.header__top{
+    display: flex;
+}
+.nav__list{
+    display: flex
+}
+
+.header {
+
+		&__top {
+		}
+
+		&__top--left {
+		}
+
+		&__language {
+		}
+
+		&__top--right {
+		}
+
+		&__phone {
+		}
+
+		&__bottom {
+		}
+}
+.container {
+}
+.lang-active {
+}
+.lang-default {
+}
+.lang-ul {
+}
+.time-work {
+}
+.logo {
+}
+.btn--accent {
+}
+.nav {
+
+		&__list {
+		}
+
+		&__link {
+		}
+}
+
+
+
+
+
+
+
+
+
+@import "src/media";
