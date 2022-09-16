@@ -67,8 +67,7 @@ button {
 html {
     font-size: 62.5%;
     font-family: "Circe", sans-serif;
- /* ! */
-    font-size: 10px;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
@@ -101,3 +100,12 @@ body {
 }
 
 /* HEADER */
+.header__top {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__list {
+    display: -ms-flexbox;
+    display: flex;
+}

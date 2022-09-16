@@ -1,3 +1,24 @@
- @media screen and (max-width: 0) {
- 
+ @media screen and (max-width: 950px) {
+  /* HEADER */
+ .nav__link {
+			font-size: 1.4rem;
+	}
+
+	.header__top--right,
+  .header__top--left {
+				column-gap: 1.7rem;
+		}
+
+}
+
+@media screen and (max-width: 760px){
+  .header__phone {
+    display: none;
+  }
+  .time-work {
+    display: none;
+  }
+  .header__top--right .btn--accent{
+    display: none;
+  }
 }
