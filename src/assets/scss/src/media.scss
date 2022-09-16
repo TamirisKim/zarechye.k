@@ -9,16 +9,35 @@
 				column-gap: 1.7rem;
 		}
 
+.overlay { display: none; }
 }
 
 @media screen and (max-width: 760px){
-  .header__phone {
-    display: none;
-  }
   .time-work {
     display: none;
   }
-  .header__top--right .btn--accent{
+  .header__top--right{
     display: none;
   }
+  .toggle-btn{display: inline-block}
+
+  .nav{
+      position: absolute;
+      top:99%; right:0;
+      background-color: rgb(187, 97, 97);
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+
+  }
+
+     .header__bottom.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+   }
+   
+   .nav__link{
+      display: block;
+      margin:2rem;
+   }
+
 }
