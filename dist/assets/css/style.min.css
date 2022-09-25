@@ -279,6 +279,7 @@ body {
   pointer-events: all;
 }
 
+/* HERO */
 @media screen and (max-width: 950px) {
   /* HEADER */
   .nav__link {

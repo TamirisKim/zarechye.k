@@ -11,6 +11,8 @@
     <meta name="author" content="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="#" >
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <!-- links -->
     <link rel="shortcut icon" href="/src/assets/images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -79,11 +81,53 @@
     </header>
 
     
-    Hello!
+    <!-- hero section -->
+    <section class="hero" id="hero">
+    
+       <div class="swiper hero-slider">
+    
+          <div class="swiper-wrapper">
+    
+             <div class="swiper-slide box" style="background: url(assets/images/black-bg.jpg);">
+                <div class="content">
+                   <p>ваши идеальные выходные</p>
+                   <p>Уединение с природой вдали
+                      от городской суеты</p>
+                </div>
+             </div>
+    
+             <div class="swiper-slide box" style="background: url(assets/images/black-bg.jpg);">
+                <div class="content">
+                   <p>2 ваши идеальные выходные</p>
+                   <p>2 Уединение с природой вдали
+                      от городской суеты</p>
+                </div>
+             </div>
+    
+             <div class="swiper-slide box" style="background: url(assets/images/black-bg.jpg);">
+                <div class="content">
+                   <p>3 ваши идеальные выходные</p>
+                   <p>3 Уединение с природой вдали
+                      от городской суеты</p>
+                </div>
+             </div>
+    
+    
+          </div>
+    
+          <div class="swiper-pagination"></div>
+    
+       </div>
+    
+    </section>
     
 
     <footer>Footer</footer>
 
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file links  -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
