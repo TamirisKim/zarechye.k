@@ -156,6 +156,7 @@ to{opacity:1}
 			text-transform: uppercase;
 			color: $black;
 			transition: color .2s linear;
+			list-style: none;
 
 			&:hover{
 				color: $accent-color;
