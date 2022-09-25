@@ -1,19 +1,41 @@
-console.log('file 1');
+'use strict';
 
-let menuBtn = document.querySelector("[data-nav-toggler]");
-let navbar = document.querySelector("[data-navbar]");
+/**
+ * add event on element
+ */
 
-menuBtn.onclick = () => {
-  menuBtn.classList.toggle("close-btn");
+const addEventOnElem = function (elem, type, callback) {
+  if (elem.length > 1) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
+    }
+  } else {
+    elem.addEventListener(type, callback);
+  }
+}
+
+
+/**
+ * navbar toggle
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
   navbar.classList.toggle("active");
-};
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("active");
+}
 
-window.onscroll = () => {
-  menuBtn.classList.remove("close-btn");
+addEventOnElem(navTogglers, "click", toggleNavbar);
+
+const closeNavbar = function () {
   navbar.classList.remove("active");
-};
+  overlay.classList.remove("active");
+  document.body.classList.remove("active");
+}
 
-
-
-
-
+addEventOnElem(navbarLinks, "click", closeNavbar);
