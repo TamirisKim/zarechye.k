@@ -1,4 +1,8 @@
+ /* =========================================@media  950px============ */
  @media screen and (max-width: 950px) {
+  html {
+    font-size: 55%;
+ }
   /* HEADER */
  .nav__link {
 			font-size: 1.4rem;
@@ -10,6 +14,7 @@
 		}
 }
 
+/* =========================================@media  760px============ */
 @media screen and (max-width: 760px){
   .time-work {
     display: none;
@@ -25,7 +30,6 @@
     right: 20px;
    }
  
-
    /*  */
 
    body.active { overflow: hidden; }
@@ -59,4 +63,26 @@
   margin-bottom: 15px;
 }
 
+/*  */
+.hero{
+	.hero-slider{
+		.box{
+			min-height: 80vh;
+
+		}
+	}
+}
+.hero-title{
+  font-size: 4.5rem;
+  line-height: 4.7rem;
+}
+.hero-text {
+	padding-top: 1.5rem;
+}
+}
+/* =========================================@media  450px============ */
+@media screen and (max-width: 450px){
+  html {
+    font-size: 50%;
+ }
 }

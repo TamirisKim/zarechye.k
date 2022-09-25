@@ -56,8 +56,10 @@ var swiper = new Swiper(".hero-slider", {
     clickable: true,
   },
   centeredSlides: true,
-  autoplay: {
-     delay: 4500,
-     disableOnInteraction: false,
-  },
+  // autoplay: {
+  //    delay: 4500,
+  //    disableOnInteraction: false,
+  // },
 });
+
+
