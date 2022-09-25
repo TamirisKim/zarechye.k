@@ -51,9 +51,13 @@ var swiper = new Swiper(".hero-slider", {
   //    nextEl: ".swiper-button-next",
   //    prevEl: ".swiper-button-prev",
   // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
   centeredSlides: true,
   autoplay: {
-     delay: 9500,
+     delay: 4500,
      disableOnInteraction: false,
   },
 });
