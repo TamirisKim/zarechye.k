@@ -47,19 +47,15 @@ var swiper = new Swiper(".hero-slider", {
   spaceBetween: 20,
   effect: "fade",
   loop: true,
-  // navigation: {
-  //    nextEl: ".swiper-button-next",
-  //    prevEl: ".swiper-button-prev",
-  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   centeredSlides: true,
-  // autoplay: {
-  //    delay: 4500,
-  //    disableOnInteraction: false,
-  // },
+  autoplay: {
+     delay: 4500,
+     disableOnInteraction: false,
+  },
 });
 
 
