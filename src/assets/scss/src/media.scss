@@ -64,13 +64,8 @@
 }
 
 /*  */
-.hero{
-	.hero-slider{
-		.box{
-			min-height: 80vh;
-
-		}
-	}
+.hero .hero-slider .box{
+  min-height: 80vh;
 }
 .hero-title{
   font-size: 4.5rem;

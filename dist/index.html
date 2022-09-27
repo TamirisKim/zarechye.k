@@ -118,21 +118,40 @@
           <div class="swiper-pagination"></div>
     
        </div>
-    
+      
     </section> 
     
     <!-- search room  -->
-    <div class="search-room">
-       <div class="search-room__card">
-          <div class="search-room__top">
-             
-          </div>
-          <div class="search-room__bottom">
-             <a href="#" class="btn--accent">НАЙТИ НОМЕР</a>
-          </div>
-       </div>
-    </div>
     
+    <div class="container">
+    
+       <form>
+          <div class="filter-flex">
+    
+             <div class="filter-grow">
+                <p class="filter-title">Заезд</p>
+                <input class="filterinput" type="date" name=""  value="">
+             </div>
+    
+             <div class="filter-grow">
+                <p class="filter-title">Выезд</p>
+                <input class="filterinput" type="date" name=""  value="">
+             </div>
+             
+             <div class="filter-grow">
+                <p class="filter-title">Количество людей</p>
+                <select class="filterinput" name="">
+                   <option value="">1 взрослых</option>
+                   <option value="">2 взрослых</option>
+                   <option value="">2 взрослых, 1 детей</option>
+                   <option value="" selected="">2 взрослых, 2 детей</option>
+                </select>
+             </div>
+         
+             <button type="submit" class="btn--accent filter-btn">НАЙТИ НОМЕР</button>
+          </div>
+       </form>
+    </div>
     
     
 
