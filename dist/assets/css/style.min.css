@@ -150,6 +150,7 @@ body {
   display: block;
   opacity: 1;
   z-index: 5555;
+  border-radius: 7px 7px 0 0;
   animation: fadeEffect 1s;
 }
 
@@ -193,6 +194,7 @@ body {
 .lang-ul {
   background-color: #F7F7F7;
   border-radius: 0 0 7px 7px;
+  position: fixed;
 }
 
 .lang-ul li:hover {
@@ -203,7 +205,7 @@ body {
 .lang-ul a {
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 8px 12px;
   color: #151515;
 }
 
@@ -384,6 +386,45 @@ option {
   padding: 1.4rem 3.8rem;
 }
 
+/* SALE BANNER */
+.img-height-bg {
+  background: url(../../assets/images/sale-bg.jpg) no-repeat;
+  min-height: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: -9rem;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+
+.img-height-bg::before {
+  position: absolute;
+  content: "";
+  background: rgba(48, 48, 48, 0.5);
+  width: 100%;
+  height: 70rem;
+}
+
+.img-height-bg .content {
+  text-align: center;
+  position: relative;
+}
+
+.sale-content {
+  display: flex;
+}
+
+.sale-box {
+  display: flex;
+  align-items: center;
+}
+
+.sale-box-text {
+  text-align: start;
+}
+
 /* =========================================@media  950px============ */
 @media screen and (max-width: 950px) {
   html {
@@ -397,9 +438,13 @@ option {
 .header__top--left {
     column-gap: 1.7rem;
   }
+  /*  */
+  .hero .hero-slider .box {
+    min-height: 80vh;
+  }
 }
 /* =========================================@media  760px============ */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 773px) {
   .time-work {
     display: none;
   }
@@ -447,7 +492,7 @@ option {
   }
   /*  */
   .hero .hero-slider .box {
-    min-height: 80vh;
+    min-height: 70vh;
   }
   .hero-title {
     font-size: 4.5rem;
@@ -456,10 +501,40 @@ option {
   .hero-text {
     padding-top: 1.5rem;
   }
+  /*  */
+  .img-height-bg {
+    margin-block-start: -16rem;
+  }
+}
+/* =========================================@media  600px============ */
+@media screen and (max-width: 600px) {
+  .img-height-bg {
+    margin-block-start: -20rem;
+  }
 }
 /* =========================================@media  450px============ */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 470px) {
   html {
     font-size: 50%;
+  }
+  /*  */
+  .hero-title {
+    font-size: 4rem;
+  }
+  /*  */
+  .img-height-bg {
+    margin-block-start: -23rem;
+  }
+}
+/* =========================================@media  434px============ */
+@media screen and (max-width: 434px) {
+  .img-height-bg {
+    margin-block-start: -28rem;
+  }
+}
+/* =========================================@media  378px============ */
+@media screen and (max-width: 378px) {
+  .img-height-bg {
+    margin-block-start: -38rem;
   }
 }

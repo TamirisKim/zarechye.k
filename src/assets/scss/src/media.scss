@@ -12,10 +12,15 @@
   .header__top--left {
 				column-gap: 1.7rem;
 		}
+
+    /*  */
+    .hero .hero-slider .box {
+      min-height: 80vh;
+  }
 }
 
 /* =========================================@media  760px============ */
-@media screen and (max-width: 760px){
+@media screen and (max-width: 773px){
   .time-work {
     display: none;
   }
@@ -65,7 +70,7 @@
 
 /*  */
 .hero .hero-slider .box{
-  min-height: 80vh;
+  min-height: 70vh;
 }
 .hero-title{
   font-size: 4.5rem;
@@ -74,10 +79,42 @@
 .hero-text {
 	padding-top: 1.5rem;
 }
+/*  */
+.img-height-bg {
+	margin-block-start: -16rem;
 }
+}
+
+/* =========================================@media  600px============ */
+@media screen and (max-width: 600px){
+  .img-height-bg {
+    margin-block-start: -20rem;
+  }
+}
+
 /* =========================================@media  450px============ */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 470px){
   html {
     font-size: 50%;
  }
+ /*  */
+ .hero-title{
+  font-size: 4rem;
+}
+/*  */
+.img-height-bg {
+  margin-block-start: -23rem;
+}
+}
+/* =========================================@media  434px============ */
+@media screen and (max-width: 434px){
+  .img-height-bg {
+    margin-block-start: -28rem;
+  }
+}
+/* =========================================@media  378px============ */
+@media screen and (max-width: 378px){
+  .img-height-bg {
+    margin-block-start: -38rem;
+  }
 }

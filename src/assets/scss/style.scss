@@ -67,6 +67,7 @@ $ff: "Circe", sans-serif;
 	display:block;
 	opacity:1;
 	z-index:5555;
+	border-radius:  7px 7px 0 0;
 	animation:fadeEffect 1s;
 }
 @keyframes fadeEffect{from{opacity:0}
@@ -103,6 +104,7 @@ to{opacity:1}
 .lang-ul{
 	background-color: #F7F7F7;
 	border-radius: 0 0 7px 7px;
+	position: fixed;
 }
 .lang-ul li:hover{
 	background-color: darken(#F7F7F7, 7%);
@@ -112,7 +114,7 @@ to{opacity:1}
 .lang-ul a{
 	display:block;
 	width:100%;
-	padding:8px;
+	padding:8px 12px;
 	color:$black;
 }
 
@@ -301,4 +303,43 @@ option {
 }
 
 
+/* SALE BANNER */
+.img-height-bg {
+	background: url(../../assets/images/sale-bg.jpg) no-repeat;
+	min-height: 70rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-block-start: -9rem;
+	background-size: cover !important;
+	background-position: center !important;
+	position: relative;
+
+}
+.img-height-bg::before{
+	position: absolute;
+	content: "";
+	background: rgba(48, 48, 48, 0.5);
+	width: 100%;
+	height: 70rem;
+}
+
+.img-height-bg .content {
+	text-align: center;
+	position: relative;
+}
+.heading {
+}
+.sale-content {
+	display: flex;
+}
+.sale-box {
+	display: flex;
+	align-items: center;
+}
+.sale-box-text {
+	text-align: start
+}
+.btn--accent {
+}
 @import "src/media";
