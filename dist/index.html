@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="#" >
     <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- links -->
     <link rel="shortcut icon" href="/src/assets/images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -122,7 +122,7 @@
     </section> 
     
     <!-- search room  -->
-    
+    <div class="search-room">
     <div class="container">
     
        <form>
@@ -152,16 +152,16 @@
           </div>
        </form>
     </div>
-    
+    </div>
     <!-- SALE BANNER -->
-    <div class="img-height-bg" >
+    <section class="img-height-bg" >
        <div class="container">
     
          <div class="content">
-           <h3 class="heading">день рождение в заречье</h3>
+           <h3 class="heading-white">день рождение в заречье</h3>
            <div class="sale-content">
              <div class="sale-box">
-                <p>15%</p>
+                <p class="sale-box-sale">15%</p>
                 <div class="sale-box-text">
                    <span>скидка</span>
                    <p>На проживание в коттедже</p>
@@ -169,7 +169,7 @@
              </div>
     
              <div class="sale-box">
-                <p>10%</p>
+                <p class="sale-box-sale">10%</p>
                 <div class="sale-box-text">
                    <span>скидка</span>
                    <p>На проживание в коттедже</p>
@@ -180,12 +180,51 @@
          </div>
     
        </div>
-     </div>
+     </section>
+    
+     <!-- WE OFFER -->
+     <section class="offer">
+       <h2 class="heading">мы предлагаем</h2>
+    
+       <div class="offer__container container swiper-container">
+          <div class="swiper-wrapper">
+             <!--==================== OFFER 1 ====================-->
+             <div class="offer__card swiper-slide">
+                <span class="offer__price">от 20 000₸</span>
+                <img src="assets/images/offer-1.jpg" alt="" class="offer__img">
+                <h2 class="offer__title">проживание</h2>
+                <span class="offer__description">Проживание в коттеджах с лучшими условиями для вас</span>
+             </div>
+    
+             <!--==================== OFFER 2 ====================-->
+             <div class="offer__card swiper-slide">
+                <span class="offer__price">от 20 000₸</span>
+                <img src="assets/images/offer-2.jpg" alt="" class="offer__img">
+                <h2 class="offer__title">проживание</h2>
+                <span class="offer__description">Проживание в коттеджах с лучшими условиями для вас</span>
+             </div>
+    
+             <!--==================== OFFER 3 ====================-->
+             <div class="offer__card swiper-slide">
+                <span class="offer__price">от 20 000₸</span>
+                <img src="assets/images/offer-3.jpg" alt="" class="offer__img">
+                <h2 class="offer__title">проживание</h2>
+                <span class="offer__description">Проживание в коттеджах с лучшими условиями для вас</span>
+             </div>
+    
+     
+    
+          </div>
+       </div>
+    </section>
+    
+    
+    
 
     <footer>Footer</footer>
 
     <!-- swiper -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- custom js file links  -->
     <script src="assets/js/app.js"></script>

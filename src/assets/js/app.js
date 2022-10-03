@@ -58,4 +58,22 @@ var swiper = new Swiper(".hero-slider", {
   },
 });
 
+/*==================== SWIPER offer ====================*/
 
+var swiper = new Swiper(".offer__container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 44,
+  coverflowEffect: {
+    rotate: 0,
+    depth: 150,
+  },
+  breakpoints: {
+    640: {
+      spaceBetween: 70
+    }
+  },
+});

@@ -70,4 +70,40 @@ body {
     }
 }
 
+.heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6.5rem;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: $black;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 45px;
+        border-bottom: 0.4rem solid $accent-color;
+        top: 130%;
+        left: 45%;
+    }
+}
+.heading-white {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6.5rem;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: $white;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 45px;
+        border-bottom: 0.4rem solid $white;
+        top: 130%;
+        left: 45%;
+    }
+}
 

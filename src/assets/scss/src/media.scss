@@ -85,13 +85,50 @@
 }
 }
 
+
 /* =========================================@media  600px============ */
 @media screen and (max-width: 600px){
   .img-height-bg {
-    margin-block-start: -20rem;
+    margin-block-start: 0;
+    min-height: 60rem;
   }
+  .img-height-bg::before {
+    height: 60rem;
 }
-
+/*  */
+.search-room .container{
+  padding-inline: 0;
+}
+.filter-flex{
+  border-radius: 0;
+}
+.heading-white::after{
+  top: 120%;
+}
+/*  */
+.offer{
+  margin-block: 7rem;
+}
+.offer .heading{
+  font-size: 4rem;
+  margin-bottom: 5.5rem;
+    &::after{
+    top: 120%;
+}
+}
+.heading-white{
+  font-size: 4rem;
+  &::after{
+    top: 110%;
+}
+}
+}
+/* =========================================@media  554px============ */
+@media screen and (max-width: 554px){
+  .offer__card {
+		max-width: 45rem;
+	}
+}
 /* =========================================@media  450px============ */
 @media screen and (max-width: 470px){
   html {
@@ -102,19 +139,11 @@
   font-size: 4rem;
 }
 /*  */
-.img-height-bg {
-  margin-block-start: -23rem;
+
+
 }
-}
-/* =========================================@media  434px============ */
-@media screen and (max-width: 434px){
-  .img-height-bg {
-    margin-block-start: -28rem;
-  }
-}
+
 /* =========================================@media  378px============ */
 @media screen and (max-width: 378px){
-  .img-height-bg {
-    margin-block-start: -38rem;
-  }
+
 }

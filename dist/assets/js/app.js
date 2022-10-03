@@ -1,1 +1,44 @@
-!function(){"use strict";const e=function(e,t,a){if(e.length>1)for(let c=0;c<e.length;c++)e[c].addEventListener(t,a);else e.addEventListener(t,a)},t=document.querySelector("[data-navbar]"),a=document.querySelectorAll("[data-nav-link]"),c=document.querySelectorAll("[data-nav-toggler]"),l=document.querySelector("[data-overlay]");e(c,"click",(function(){t.classList.toggle("active"),l.classList.toggle("active"),document.body.classList.toggle("active")})),e(a,"click",(function(){t.classList.remove("active"),l.classList.remove("active"),document.body.classList.remove("active")})),new Swiper(".hero-slider",{spaceBetween:20,effect:"fade",loop:!0,pagination:{el:".swiper-pagination",clickable:!0},centeredSlides:!0,autoplay:{delay:4500,disableOnInteraction:!1}})}(),console.log("file 2");
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/***/ (function() {
+
+"use strict";
+eval("\r\n\r\n/**\r\n * add event on element\r\n */\r\n\r\nconst addEventOnElem = function (elem, type, callback) {\r\n  if (elem.length > 1) {\r\n    for (let i = 0; i < elem.length; i++) {\r\n      elem[i].addEventListener(type, callback);\r\n    }\r\n  } else {\r\n    elem.addEventListener(type, callback);\r\n  }\r\n}\r\n\r\n\r\n/**\r\n * navbar toggle\r\n */\r\n\r\nconst navbar = document.querySelector(\"[data-navbar]\");\r\nconst navbarLinks = document.querySelectorAll(\"[data-nav-link]\");\r\nconst navTogglers = document.querySelectorAll(\"[data-nav-toggler]\");\r\nconst overlay = document.querySelector(\"[data-overlay]\");\r\n\r\nconst toggleNavbar = function () {\r\n  navbar.classList.toggle(\"active\");\r\n  overlay.classList.toggle(\"active\");\r\n  document.body.classList.toggle(\"active\");\r\n}\r\n\r\naddEventOnElem(navTogglers, \"click\", toggleNavbar);\r\n\r\nconst closeNavbar = function () {\r\n  navbar.classList.remove(\"active\");\r\n  overlay.classList.remove(\"active\");\r\n  document.body.classList.remove(\"active\");\r\n}\r\n\r\naddEventOnElem(navbarLinks, \"click\", closeNavbar);\r\n\r\n\r\n\r\n/* swiper hero */\r\nvar swiper = new Swiper(\".hero-slider\", {\r\n  spaceBetween: 20,\r\n  effect: \"fade\",\r\n  loop: true,\r\n  pagination: {\r\n    el: '.swiper-pagination',\r\n    clickable: true,\r\n  },\r\n  centeredSlides: true,\r\n  autoplay: {\r\n     delay: 4500,\r\n     disableOnInteraction: false,\r\n  },\r\n});\r\n\r\n/*==================== SWIPER offer ====================*/\r\n\r\nvar swiper = new Swiper(\".offer__container\", {\r\n  effect: \"coverflow\",\r\n  grabCursor: true,\r\n  centeredSlides: true,\r\n  slidesPerView: \"auto\",\r\n  loop: true,\r\n  spaceBetween: 44,\r\n  coverflowEffect: {\r\n    rotate: 0,\r\n    depth: 150,\r\n  },\r\n  breakpoints: {\r\n    640: {\r\n      spaceBetween: 70\r\n    }\r\n  },\r\n});\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/file2.js":
+/*!********************************!*\
+  !*** ./src/assets/js/file2.js ***!
+  \********************************/
+/***/ (function() {
+
+eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/file2.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	__webpack_modules__["./src/assets/js/app.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/assets/js/file2.js"]();
+/******/ 	
+/******/ })()
+;
