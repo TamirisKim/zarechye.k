@@ -76,4 +76,8 @@ var swiper = new Swiper(".offer__container", {
       spaceBetween: 70
     }
   },
+    autoplay: {
+     delay: 4500,
+     disableOnInteraction: false,
+  },
 });
