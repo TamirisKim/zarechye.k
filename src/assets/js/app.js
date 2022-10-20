@@ -81,3 +81,25 @@ var swiper = new Swiper(".offer__container", {
      disableOnInteraction: false,
   },
 });
+/*==================== SWIPER FOLLOW ====================*/
+
+var swiper = new Swiper(".follow__container", {
+  // effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 44,
+  // coverflowEffect: {
+  //   rotate: 0,
+  //   depth: 150,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  //   autoplay: {
+  //    delay: 4500,
+  //    disableOnInteraction: false,
+  // },
+});
